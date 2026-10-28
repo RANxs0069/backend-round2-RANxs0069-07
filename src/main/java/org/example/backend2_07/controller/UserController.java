@@ -51,7 +51,7 @@ public class UserController {
 
     @GetMapping("/admin/name/{username}")
     public ResponseEntity<Result<?>> adminGetUserByUsername(@PathVariable String username) {
-        UserServiceResult<?> usr = userService.findByName(username);
+        UserServiceResult<?> usr = userService.findByUsername(username);
         return transform(usr);
     }
 

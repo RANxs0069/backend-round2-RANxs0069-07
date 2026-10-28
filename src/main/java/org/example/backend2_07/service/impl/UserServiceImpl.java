@@ -38,7 +38,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public UserServiceResult<UserVO> findByName(String username) {
+    public UserServiceResult<UserVO> findByUsername(String username) {
         UserVO user = userMapper.findByUsername(username);
         if (user == null) {
             return UserServiceResult.fail(404, "用户不存在");

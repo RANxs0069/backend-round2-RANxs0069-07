@@ -6,6 +6,6 @@ public interface UserService {
     public UserServiceResult<?> register(String username, String password);
     public UserServiceResult<?> login(String username, String password);
     public UserServiceResult<?> findById(Long id);
-    public UserServiceResult<?> findByName(String username);
+    public UserServiceResult<?> findByUsername(String username);
     public UserServiceResult<?> findAll();
 }
